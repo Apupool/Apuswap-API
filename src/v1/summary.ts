@@ -11,7 +11,7 @@ export const handler: APIGatewayProxyHandler = async () => {
           const pair = topPairs[i]
           const pairData = topPairsData[i]
 
-          accumulator[`ETH_${pair.exchangeAddress}`] = {
+          accumulator[`ZNN_${pair.exchangeAddress}`] = {
             last_price: pairData.price,
             base_volume: pairData.tradeVolumeEth,
             quote_volume: pairData.tradeVolumeToken
